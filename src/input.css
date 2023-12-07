@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav-item{
+        @apply  py-2 px-3 text-primary rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 uppercase font-extrabold ;
+    }
+    .dropdown-item{
+        @apply block px-4 py-2 hover:bg-primary  hover:text-white ;
+    }
+    .nav-ul{
+        @apply flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white
+    }
+    /* banner */
+    .banner-title{
+        @apply text-center md:text-left text-4xl sm:text-5xl md:text-7xl font-extrabold text-white;
+    }
+    .banner-subtitle{
+        @apply text-center md:text-left md:w-8/12 text-white font-semibold py-4 md:py-7 mb-3;
+    }
+
+    /* card */
+    .card{
+        @apply w-full  bg-white border border-gray-200 rounded-xl shadow-lg;
+    }
+    .card-body{
+        @apply flex flex-col justify-center items-center px-8 py-12;
+    }
+    .card-icon{
+        @apply border-double border-4 border-primary rounded-full flex justify-center text-primary items-center w-20 text-5xl px-10 py-4;
+    }
+    .service-card{
+        @apply border border-blue-400 px-5 pt-8 pb-12 rounded-xl transition-all duration-300 hover:shadow-xl;
+    }
+    .numbers-card{
+        @apply text-center px-4 py-10 shadow-lg border border-blue-500 rounded-lg;
+    }
+
+    /* section */
+    .section-title{
+        @apply text-3xl md:text-5xl font-extrabold text-primary;
+    }
+    .section-subtitle{
+        @apply text-gray-600 text-lg md:text-xl font-bold pt-2 mb-14;
+    }
+
+    /* footer */
+    .footer-title{
+        @apply mb-4 text-lg font-bold text-white uppercase;
+    }
+    .footer-list{
+        @apply mb-4 flex items-start gap-4;
+    }
+    .list-arrow-icon{
+        @apply text-secondary text-sm  border-2 border-secondary rounded-full px-1.5 py-1;
+    }
+}
